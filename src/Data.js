@@ -1,11 +1,12 @@
 import React from 'react'
+import { FetchWeather } from './ApiHelper'
 
+import "./data.css"
 
-
-const Data=()=> {
+const Data=(props)=> {
     return (
-        <div>
-            {{}}
+        <div className= "container ab">
+            {JSON.stringify(FetchWeather())}
         </div>
     )
 }
