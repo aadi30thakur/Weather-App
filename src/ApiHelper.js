@@ -1,15 +1,14 @@
-require('dotenv').config()
+import { API } from "./API";
 
-const  Key = process.env.API;
+
 
 export const FetchWeather = ()=>{
-    const  value = "shimla"
-    console.log(`${Key}`)
-    return fetch(`api.openweathermap.org/data/2.5/weather?q=${value}&appid=6a1d73afe2efa22ccbfb742028768309`,{
+    return fetch(`api.openweathermap.org/data/2.5/weather?q=shimla&appid=${API}`,{
         method:"GET",
-
-    }).then((res) =>{
-        return res.json();
+       
+    }).then((response) =>{
+        console.log(response)
+        return response.json();
     })
     .catch(err=>console.log(err))
 }
