@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { FetchWeather } from './ApiHelper'
-import Data from './Data'
 
 const FormInput=()=> {
     const [value, setValue] = useState("")
@@ -14,9 +13,10 @@ const FormInput=()=> {
 
     const settingWeather = ()=>{
         
-        FetchWeather(value).then((res)=>{ 
-        setWeather(res)
-        console.log(res)
+        FetchWeather(value)
+        .then((res)=>{ 
+            setWeather(res)
+            console.log(res)
        }
         )
     }
@@ -31,11 +31,14 @@ const FormInput=()=> {
             placeholder="Enter the name of the place"
         />
         <button type="submit"
-            onClick={settingWeather}
+            onClick={settingWeather()}
             >Search</button>
       </form>
+      <div>
+          hello
+        {weather}
 
-      <Data value= {weather} />
+      </div>
         </div>
     )
 }
