@@ -1,25 +1,13 @@
 import React, { useState } from 'react'
 import { FetchWeather } from './ApiHelper';
 import Data from './Data'
-
-
-
-
-
-
-
 const FormInput=()=> {
     const [value, setValue] = useState("")
     const [weather, setWeather] = useState([])
-
-
-
 /* ----------------------------- handling change ---------------------------- */
-
     const handleChange=(event)=>{
         setValue(event.target.value);
 }
-
     const settingWeather = (event)=>{
         if(event.key==="Enter"){
             FetchWeather(value)
@@ -39,12 +27,10 @@ const FormInput=()=> {
             onKeyPress={settingWeather}
             placeholder="Enter the name of the place"
         />
-
       </div>
       <div className="container">
           <Data value={weather}/>
       </div>
-
         </div>
     )
 }

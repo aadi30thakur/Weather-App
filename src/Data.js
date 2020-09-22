@@ -1,8 +1,5 @@
 import React from 'react'
-import { FetchWeather } from './ApiHelper'
-
 import "./data.css"
-
 const Data=(props)=> {
     return (
         <div className= "container ab">
@@ -10,5 +7,4 @@ const Data=(props)=> {
         </div>
     )
 }
-
 export default Data
