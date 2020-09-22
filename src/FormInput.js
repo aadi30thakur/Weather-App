@@ -11,8 +11,9 @@ const FormInput = () => {
   const settingWeather = (event) => {
     if (event.key === "Enter") {
       FetchWeather(value).then((res) => {
-        setWeather(res.main);
-        console.log(res);
+        setWeather(res);
+        console.log(weather.main.temp)
+        setValue("")
       });
     }
   };

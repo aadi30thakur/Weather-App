@@ -1,6 +1,15 @@
-import React from "react";
-import "./data.css";
+import React, { useEffect, useState } from 'react'
+import "./data.css"
+
 const Data = (props) => {
-  return <div className="container ab">{JSON.stringify(props.value)}</div>;
+   const temp = props.value.main
+
+
+    return (
+        <div className="container ab">
+            {JSON.stringify(temp)}
+            <div className="temp"></div>
+        </div>
+    )
 };
 export default Data;

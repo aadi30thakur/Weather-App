@@ -6,6 +6,6 @@ body {
     rgba(233, 148, 26, 1) 100%
   );
 }
-form {
+.form {
   margin-top: 2rem;
 }
