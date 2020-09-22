@@ -1,10 +1,13 @@
-import { API } from "./API";
+const  { ApiKey, Base } = require( "./API");
 
 
 
 export const FetchWeather = (Value)=>{
-    return fetch(`api.openweathermap.org/data/2.5/weather?q=${Value}&appid=${API}`)
-    .then((response) =>{
+
+    console.log(`${ApiKey}`)
+    console.log(`${Base}`)
+    return fetch(`${ApiKey}?q=${Value}&units=Metric&appid=${Base}`)
+    .then(function(response) {
         console.log(response)
         return response.json();
     })

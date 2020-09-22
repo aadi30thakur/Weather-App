@@ -1,2 +1,2 @@
-
-export const API = process.env.API;
+export const Base = process.env.REACT_APP_API;
+export const ApiKey = process.env.REACT_APP_BASE;

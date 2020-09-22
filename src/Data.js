@@ -6,7 +6,7 @@ import "./data.css"
 const Data=(props)=> {
     return (
         <div className= "container ab">
-            {JSON.stringify(FetchWeather())}
+            {JSON.stringify(props.value)}
         </div>
     )
 }
