@@ -3,7 +3,7 @@ import "./data.css"
 
 const Data = (props) => {
    const {temp} = props.value.main
-   const {main,description} = props.value.weather[0]
+   const {description} = props.value.weather[0]
 
 
     return (
