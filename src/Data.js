@@ -1,13 +1,18 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import "./data.css"
 
 const Data = (props) => {
    const {temp} = props.value.main
+   const {main,description} = props.value.weather[0]
 
 
     return (
-        <div className="container ab h1">
+        <div className="container h1 text-center">
+            <div className="ab">
+            {/* {main}<br/> */}
+            {description}<br/>
             {Math.round(temp)}&#176;C
+            </div>
             <div className="temp"></div>
         </div>
     )

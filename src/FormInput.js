@@ -12,13 +12,22 @@ const FormInput = () => {
     if (event.key === "Enter") {
       FetchWeather(value).then((res) => {
         setWeather(res);
+        if(weather){
+          console.log(weather)
+        }
         setValue("")
-      });
+      }).catch(err=>console.log(err));
     }
   };
   return (
-    <div>
-      <div className="form container ">
+
+    <div className=
+      {weather.main? 
+        (weather.main.temp>20?weather.main.temp>30? "hot": "moderate" :"cold")
+        :
+        ""
+      }>
+      <div className="form container mt-5 ">
         <input
           type="text"
           className="form-control"
@@ -32,6 +41,8 @@ const FormInput = () => {
         {weather.main? <Data value={weather} /> : ""}
       </div>
     </div>
+
+
   );
 };
 

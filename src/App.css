@@ -1,11 +1,51 @@
 body {
-  background: rgb(246, 81, 48);
+  /* background: rgb(246, 81, 48);
   background: linear-gradient(
     90deg,
     rgba(246, 81, 48, 1) 0%,
     rgba(233, 148, 26, 1) 100%
-  );
+  ); */
+  background-image: url("https://images.pexels.com/photos/775201/pexels-photo-775201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;background-attachment: fixed;background-position: center center;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
 }
+
+
+
 .form {
-  margin-top: 2rem;
+  position: relative;
+}
+
+.hot{
+  background-image: url("https://images.pexels.com/photos/53537/caravan-desert-safari-dune-53537.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;background-attachment: fixed;background-position: center center;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.cold{
+  background-image: url("https://images.pexels.com/photos/688660/pexels-photo-688660.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;background-attachment: fixed;background-position: center center;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.moderate{
+  background-image: url("https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-size: cover;background-attachment: fixed;background-position: center center;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
 }
